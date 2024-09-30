@@ -1,15 +1,21 @@
+body{
+    background-color: #a1610d;
+}
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100vh;
+    
 }
 .inner-container{
     background-color: orange;
     min-width: 500px;
     height: 450px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(218, 222, 222, 0.937), 0 6px 20px 0 rgba(220, 216, 216, 0.971);
 }
 .weather-info{
     background-color: #eb6631;
@@ -55,4 +61,69 @@
 }
 .submit:hover{
     background-color: orange;
+}
+
+nav{
+    background-color: orange;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav a{
+    color:white;
+    padding: 5px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: white ;
+    color: orange;
+    border-radius: 5px;
+}
+.cw-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.cw-inner-container{
+    background-color: orange;
+    border-radius: 10px;
+}
+.county-temp{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.county-temp p{
+    color: #eb6631;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+    }
+    .inner-container{
+        background-color: orange;
+        min-width: 350px;
+        height: 450px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(218, 222, 222, 0.937), 0 6px 20px 0 rgba(220, 216, 216, 0.971);
+    }
+    .form-control{
+        width:200px;
+    }
+    .submit{
+        width:100px;
+        height: 40px;
+        margin-left: 5px;
+        border:none;
+        background-color: #eb6631;
+        border-radius: 5px;
+        color:white;
+    }
 }
